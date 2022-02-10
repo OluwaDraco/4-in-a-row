@@ -18,15 +18,15 @@ class Board{
             }
             spaces.push(column);
         }
-
-
         return spaces;
-                
-
-
      }
-        
-    
 
+     drawHTMLBoard(){
+         for(let col of this.spaces){
+             for (let space of col){
+                 space.drawSVGSpace();
+             }
+         }
+        }
 
 }
