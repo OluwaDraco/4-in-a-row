@@ -8,7 +8,7 @@ class Player {
     }
 
     createTokens(num){
-        tokens =[]; 
+       const tokens =[]; 
         for (let i = 0; i < num; i++){
             let token = new Token(i , this);
             tokens.push(token);
