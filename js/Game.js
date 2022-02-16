@@ -52,7 +52,7 @@ class Game{
 
        }
        if (targetSpace !== null){
-           Game.ready = false;
+           game.ready = false;
            activeToken.drop(targetSpace);
        }
     }
@@ -68,6 +68,7 @@ class Game{
                 this.activePlayer.activeToken.moveRight(this.board.columns);
             } else if (e.key === "ArrowDown") {
                 // play token
+                this.playToken();
             }
         }
 }
